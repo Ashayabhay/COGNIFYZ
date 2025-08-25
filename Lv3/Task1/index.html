@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Image Gallery</h1>
+        
+        <!-- Automatic Slideshow -->
+        <div class="slideshow-container">
+            <div class="progress-bar"></div>
+            
+            <div class="slides active">
+                <img src="https://picsum.photos/800/400?random=1" alt="Nature landscape">
+                <div class="slide-caption">Beautiful Mountain Landscape</div>
+            </div>
+            
+            <div class="slides">
+                <img src="https://picsum.photos/800/400?random=2" alt="Ocean waves">
+                <div class="slide-caption">Serene Ocean Waves</div>
+            </div>
+            
+            <div class="slides">
+                <img src="https://picsum.photos/800/400?random=3" alt="Forest path">
+                <div class="slide-caption">Mystical Forest Path</div>
+            </div>
+            
+            <div class="slides">
+                <img src="https://picsum.photos/800/400?random=4" alt="City skyline">
+                <div class="slide-caption">Urban City Skyline</div>
+            </div>
+        </div>
+
+        <!-- Thumbnail Gallery -->
+        <h2 class="gallery-title">Click to Enlarge</h2>
+        <div class="thumbnail-gallery">
+            <div class="thumbnail-item" onclick="openModal('https://picsum.photos/1200/800?random=5')">
+                <img src="https://picsum.photos/300/200?random=5" alt="Gallery image 1">
+                <div class="thumbnail-overlay">Click to View</div>
+            </div>
+            
+            <div class="thumbnail-item" onclick="openModal('https://picsum.photos/1200/800?random=6')">
+                <img src="https://picsum.photos/300/200?random=6" alt="Gallery image 2">
+                <div class="thumbnail-overlay">Click to View</div>
+            </div>
+            
+            <div class="thumbnail-item" onclick="openModal('https://picsum.photos/1200/800?random=7')">
+                <img src="https://picsum.photos/300/200?random=7" alt="Gallery image 3">
+                <div class="thumbnail-overlay">Click to View</div>
+            </div>
+            
+            <div class="thumbnail-item" onclick="openModal('https://picsum.photos/1200/800?random=8')">
+                <img src="https://picsum.photos/300/200?random=8" alt="Gallery image 4">
+                <div class="thumbnail-overlay">Click to View</div>
+            </div>
+            
+            <div class="thumbnail-item" onclick="openModal('https://picsum.photos/1200/800?random=9')">
+                <img src="https://picsum.photos/300/200?random=9" alt="Gallery image 5">
+                <div class="thumbnail-overlay">Click to View</div>
+            </div>
+            
+            <div class="thumbnail-item" onclick="openModal('https://picsum.photos/1200/800?random=10')">
+                <img src="https://picsum.photos/300/200?random=10" alt="Gallery image 6">
+                <div class="thumbnail-overlay">Click to View</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for enlarged images -->
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Enlarged image">
+        </div>
+    </div>
+
+    <script src="../../Lv3/Task1/script.js"></script>
+</body>
+</html>

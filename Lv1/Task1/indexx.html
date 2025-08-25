@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Interactive Experience</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body> <!-- Floating Orbs -->
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div> <!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-container">
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav> <!-- Main Container -->
+    <div class="container"> <!-- Header Section with Heading and Paragraph -->
+        <section class="header-section" id="home">
+            <h1 class="main-heading">Amazing Experience</h1>
+            <p class="main-paragraph"> Welcome to a stunning digital experience that combines cutting-edge design with
+                seamless functionality. Every element has been crafted with precision to create an unforgettable
+                interactive journey that captivates and inspires through innovative visual storytelling. </p>
+        </section> <!-- Image Section -->
+        <section class="image-section" id="about">
+            <div class="image-container interactive"> <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
+                    alt="Futuristic Digital Art" class="main-image">
+                <div class="image-overlay">
+                    <div class="overlay-text">✨ Interactive Magic</div>
+                </div>
+            </div>
+        </section> <!-- Form Section -->
+        <section class="form-section" id="contact">
+            <div class="form-container">
+                <h2 class="form-title">Get Connected</h2>
+                <form id="awesomeForm">
+                    <div class="input-group"> <input type="text" class="form-input" id="userMessage"
+                            placeholder="Share your thoughts..." required>
+                        <div class="input-icon">💭</div>
+                    </div> <button type="submit" class="submit-btn"> <span>Send Message</span> </button>
+                </form>
+            </div>
+        </section>
+    </div> <!-- Success Message -->
+    <div class="success-message" id="successMessage"> ✅ Message sent successfully! Thank you for connecting. </div>
+
+</body>
+
+</html>
